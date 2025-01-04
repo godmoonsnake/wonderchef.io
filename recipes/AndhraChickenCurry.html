@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Chef - North Indian Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe8d6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fad4c0;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #ffccac;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Pinyon Script', cursive;
+            color: #954c2c;
+            font-size: 48px;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .ingredients, .steps {
+            width: 45%;
+        }
+
+        .ingredients h2, .steps h2 {
+            font-family: 'Pinyon Script', cursive;
+            color: #954c2c;
+            font-size: 28px;
+            border-bottom: 2px solid #954c2c;
+            padding-bottom: 5px;
+        }
+
+        .ingredients ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .steps li img {
+            max-width: 200px; /* Increase image size */
+            max-height: 200px; /* Increase image size */
+            margin: 0 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .steps li:nth-child(even) img {
+            order: 1; /* Push the image to the right for even steps */
+            margin-left: 10px;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../frontpages/img/logo.jpg" alt="Wonder Chef Logo">
+            <span>Wonder Chef</span>
+        </div>
+        <nav>
+            <a href="../frontpages/index.html">HOME</a>
+            <a href="../frontpages/north.html">North Side of India</a>
+            <a href="../frontpages/south.html">South Side of India</a>
+            <a href="../frontpages/west.html">West Side of India</a>
+            <a href="../frontpages/east.html">East Side of India</a>
+            <a href="../frontpages/img/images.jpg">Best Recipes</a>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <h1> Andhra Chicken Curry </h1>
+        <img src="img2/andhrachickencurry.png" alt="andhra chicken curry">
+    </div>
+
+    <div class="content">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>Chicken: 500g</li>
+                <li>Onion: 2 (finely chopped)</li>
+                <li>Green chilies: 3-4</li>
+                <li>Ginger-garlic paste: 2 tbsp</li>
+                <li>Curry leaves: 1 sprig</li>
+                <li>Red chili powder: 1 tbsp</li>
+                <li>Coriander powder: 1 tbsp</li>
+                <li>Turmeric powder: ½ tsp</li>
+                <li>Garam masala: 1 tsp</li>
+                <li>Tamarind pulp: 2 tbsp</li>
+                <li>Oil: 3 tbsp</li>
+                <li>Salt: to taste</li>
+                <li>Coriander leaves: for garnish</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Steps</h2>
+            <ol>
+                <li>
+                    <img src="[Step 1 Photo URL]" alt="[Step 1 Photo Alt Text]">
+                    1. Heat oil in a pan and sauté onions until golden brown.
+                </li>
+                <li>
+                    <img src="[Step 2 Photo URL]" alt="">
+                    2. Add green chilies, curry leaves, and ginger-garlic paste; cook until the raw smell disappears.
+                </li>
+                <li>
+                    <img src="[Step 3 Photo URL]" alt="">
+                    3. Add chicken, turmeric, red chili powder, coriander powder, and salt. Sauté for 5-7 minutes.
+                </li>
+                <li>
+                    <img src="[Step 4 Photo URL]" alt="">
+                    4. Add water to cover the chicken and cook for 15 minutes.
+                </li>
+                <li>
+                    <img src="img2/Screenshot 2024-12-26 111056.png" alt="">
+                    5. Stir in tamarind pulp and garam masala. Simmer for 10 more minutes.
+                </li>
+                <li>
+                    <img src="[Step 5 Photo URL]" alt="">
+                    6. Garnish with coriander leaves and serve hot with rice.
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

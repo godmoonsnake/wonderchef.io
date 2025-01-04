@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Chef - West Indian Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe8d6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fad4c0;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #ffccac;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Pinyon Script', cursive;
+            color: #954c2c;
+            font-size: 48px;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            text-align: center;
+            font-family: 'Pinyon Script', cursive;
+            padding: 10px;
+            font-size: 24px;
+            color: #954c2c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fad4c0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Wonder Chef Logo">
+            <span>Wonder Chef</span>
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="north.html">North Side of India</a>
+            <a href="south.html">South Side of India</a>
+            <a href="west.html">West Side of India</a>
+            <a href="east.html">East Side of India</a>
+            <a href="best_recipes.html">Best Recipes</a>
+        </nav>
+    </header>
+
+    <h1>Exquisite West Indian Recipes</h1>
+
+    <section class="section">
+        <div class="card">
+            <a href="../states/gj.html">
+                <img src="img/gujarat.jpg" alt="Gujarat Recipes">
+                <h2>Serene Recipes of Gujarat</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../states/MH.html">
+                <img src="img/MH.jpg" alt="Maharashtra Recipes">
+                <h2>Delightful Recipes of Maharashtra</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../states/rj.html">
+                <img src="img/RJ.jpg" alt="Rajasthan Recipes">
+                <h2>Spellbinding Recipes of Rajasthan</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../states/goa.html">
+                <img src="img/Goa.jpg" alt="Goa Recipes">
+                <h2>Heavenly Recipes of Goa</h2>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; 2024 Wonder Chef. All rights reserved.
+    </footer>
+</body>
+</html>
