@@ -6,7 +6,6 @@
     <title>Wonder Chef - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -62,85 +61,76 @@
             border-radius: 5px;
         }
 
-        /* Hero Section */
         .hero {
-            background-image: url('img/hero.jpg'); /* Replace 'img/hero.jpg' with the path to your image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .welcome-message {
-            background-color: rgba(255, 238, 214, 0.9); /* Transparent background */
+            background-color: #fad4c0;
             text-align: center;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            width: 80%;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            margin-top: 20px; 
         }
 
-        .welcome-message h1 {
+        .hero h1 {
             font-family: 'Pinyon Script', cursive;
-            color: #954c2c;
             font-size: 36px;
+            color: #954c2c;
         }
 
-        .welcome-message p {
+        .hero p {
             font-size: 18px;
-            color: #444;
+            color: #f07f22;
+            margin-top: 10px;
             line-height: 1.6;
-            margin: 10px 0;
         }
 
-        .btn {
-            display: inline-block;
+        .scrolling-section {
+            display: flex;
+            overflow-x: hidden;
+            position: relative;
+            background-color: #ff9c67;
+            margin: 20px 0;
+            padding: 10px 0;
+        }
+
+        .scrolling-section .card {
+            flex: 0 0 20%; 
+            margin: 0 10px;
+            text-align: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(194, 94, 0);
+            padding: 10px;
+            font-family: 'Pinyon Script', cursive;
+            font-size: 28px;
+
+        }
+
+        .scrolling-section img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .scrolling-section h3 {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #954c2c;
+        }
+
+        .scrolling-section button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
             background-color: #ff5722;
             color: #fff;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
             border-radius: 5px;
-            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
             transition: background-color 0.3s;
         }
 
-        .btn:hover {
-            background-color: #d84315;
+        .scrolling-section button:hover {
+            background-color: #e64a19;
         }
 
-        /* Categories Section */
-        .categories {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .categories h2 {
-            font-size: 28px;
-            color: #954c2c;
-            margin-bottom: 20px;
-        }
-
-        .category-buttons .btn {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: #ff5722;
-            color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .category-buttons .btn:hover {
-            background-color: #d84315;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 10px;
@@ -164,7 +154,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./frontpages/img/logo.jpg" alt="Wonder Chef Logo"> 
+            <img src="./frontpages/img/logo.jpg" alt="Wonder Chef Logo">
             <span>Wonder Chef</span>
         </div>
         <nav>
@@ -173,35 +163,151 @@
             <a href="./frontpages/south.html">South Side of India</a>
             <a href="./frontpages/west.html">West Side of India</a>
             <a href="./frontpages/east.html">East Side of India</a>
-            <a href="./frontpages/best recipes .html  ">Best Recipes</a>
+            <a href="./frontpages/best recipes.html">Best Recipes</a>
         </nav>
     </header>
 
     <div class="hero">
-        <div class="welcome-message">X
-            <h1>Welcome to Wonder Chef</h1>
-            <p>
-                Welcome to explore Indian cuisine! From the rich curries of the North to the tangy flavors of the South, the spicy delights of the West to the hearty treats of the East—experience the diverse and vibrant tastes of India, all in one place.
-                Let’s savor the journey while exploring all the recipes.
-            </p>
-            <a href="recipes" class="btn">Explore Recipes</a>
-        </div>
+        <h1>Welcome to Wonder Chef</h1>
+        <p>
+            Welcome to explore Indian cuisine! From the rich curries of the North to the tangy flavors of the South, 
+            the spicy delights of the West to the hearty treats of the East—experience the diverse and vibrant tastes of India, 
+            all in one place. Let’s savor the journey while exploring all the recipes.
+        </p>
     </div>
 
-    <section class="categories">
-        <h2>Explore Indian Cuisine</h2>
-        <div class="category-buttons">
-            <a href ="./frontpages/north.html"class="btn">North</a>
-            <a href="./frontpages/south.html" class="btn">South</a>
-            <a href="./frontpages/west.html" class="btn">West</a>
-            <a href="./frontpages/east.html" class="btn">East</a>
+    <div class="scrolling-section" id="cuisineScrollingSection">
+        <div class="card">
+            <img src="./frontpages/img/noth india.webp" alt="North Indian Cuisine">
+            <h3>North Indian</h3>
+            <button onclick="location.href='./frontpages/north.html'">Explore North</button>
         </div>
-    </section>
+        <div class="card">
+            <img src="./frontpages/img/southindia.webp" alt="South Indian Cuisine">
+            <h3>South Indian</h3>
+            <button onclick="location.href='./frontpages/south.html'">Explore South</button>
+        </div>
+        <div class="card">
+            <img src="./frontpages/img/westindia.webp" alt="West Indian Cuisine">
+            <h3>West Indian</h3>
+            <button onclick="location.href='./frontpages/west.html'">Explore West</button>
+        </div>
+        <div class="card">
+            <img src="./frontpages/img/eastindia.webp" alt="East Indian Cuisine">
+            <h3>East Indian</h3>
+            <button onclick="location.href='./frontpages/east.html'">Explore East</button>
+        </div>
+        <div class="card">
+            <img src="./frontpages/img/images.jpg" alt="Best Recipes">
+            <h3>Best Recipes</h3>
+            <button onclick="location.href='./frontpages/best recipes.html'">See Recipes</button>
+        </div>
+    </div>
+   
+    <h1 style="font-family: 'Pinyon Script', cursive; text-align: center; font-size: 36px; color: #954c2c;">recipes we recommend :]</h1>
+
+    <div class="scrolling-section" id="recipeScrollingSection">
+        <div class="card">
+            <a href="./recipes/Mysore Pak.html ">
+                <img src="recipes/img2/maysore pak.jpeg" alt="Mysore Pak">
+                <h2>Mysore Pak</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes2/gajar ka halwa.html">
+                <img src="recipes2/img3/gajarkahalwa.jpg" alt="gajar ka halwa">
+                <h2>gajar ka halwa</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes2/mishti doi.html ">
+                <img src="recipes2/img3/mishti doi.jpeg" alt="mishti doi">
+                <h2>mishti doi</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes2/amritsari kulch.html ">
+                <img src="recipes2/img3/amritsari kulcha.jpeg" alt="amritsari kulcha">
+                <h2>amritsari kulcha</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes2/butter chicken.html">
+                <img src="recipes2/img3/butterchicken.jpeg" alt="butter chicken">
+                <h2>butter chicken</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes/appam.html chicken.html">
+                <img src="recipes/img2/appam with stew.jpeg" alt="appam with stew">
+                <h2>appam with stew</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes/poha.html ">
+                <img src="recipes/img2/poha.jpeg" alt="poha">
+                <h2>poha</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes/idle.html">
+                <img src="recipes/img2/idli.jpeg" alt="idli">
+                <h2>idli</h2>
+                </a>
+        </div>
+        <div class="card">
+            <a href="./recipes/Hyderabadi Biryani.html">
+                <img src="recipes/img2/hyderabadi biryani.jpeg" alt="hyderabadi biryani">
+                <h2>hyderabadi biryani</h2>
+                </a>
+        </div>
+    </div>
 
     <footer>
         &copy; 2024 Wonder Chef. All rights reserved. | 
         <a href="contact.html">Contact Us</a> | 
         <a href="about.html">About Us</a>
     </footer>
+
+    <script>
+        const cuisineScrollingSection = document.getElementById("cuisineScrollingSection");
+        let scrollPosition1 = 0;
+
+        function scrollCuisines() {
+            const cards = cuisineScrollingSection.children;
+            const cardWidth = cards[0].offsetWidth + 20; 
+            scrollPosition1 += cardWidth;
+
+            if (scrollPosition1 >= cuisineScrollingSection.scrollWidth) {
+                scrollPosition1 = 0; 
+            }
+
+            cuisineScrollingSection.scrollTo({
+                left: scrollPosition1,
+                behavior: "smooth"
+            });
+        }
+
+        const recipeScrollingSection = document.getElementById("recipeScrollingSection");
+        let scrollPosition2 = 0;
+
+        function scrollRecipes() {
+            const cards = recipeScrollingSection.children;
+            const cardWidth = cards[0].offsetWidth + 20; 
+            scrollPosition2 += cardWidth;
+
+            if (scrollPosition2 >= recipeScrollingSection.scrollWidth) {
+                scrollPosition2 = 0; 
+            }
+
+            recipeScrollingSection.scrollTo({
+                left: scrollPosition2,
+                behavior: "smooth"
+            });
+        }
+
+        setInterval(scrollCuisines, 2000);
+        setInterval(scrollRecipes, 3000);
+    </script>
 </body>
 </html>
